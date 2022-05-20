@@ -1,4 +1,5 @@
 require './nameable'
+require 'securerandom'
 
 class Person < Nameable
   attr_accessor :name, :age
@@ -11,6 +12,8 @@ class Person < Nameable
     @name = name
     @age = age
     @parent_permission = parent_permission
+    @rentals = []
+    @id = SecureRandom.uuid
   end
 
   def of_age
