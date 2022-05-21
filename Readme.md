@@ -17,6 +17,9 @@
 ### Install
 1. ```gem install```
 
+## Run
+
+Make sure `main.rb` has executable permisions. If so, simply run `./main.rb`.
 ## Run Tests
 
 ```
