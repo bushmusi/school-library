@@ -5,7 +5,6 @@ class App
       books: [],
       rentals: []
     }
-
     @methods = {
       '1': 'list_all_books',
       '2': 'list_all_people',
