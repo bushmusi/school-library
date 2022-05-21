@@ -2,7 +2,7 @@ require './nameable'
 require 'securerandom'
 
 class Person < Nameable
-  attr_accessor :name, :age
+  attr_accessor :name, :age, :rentals
 
   attr_reader :id
 
@@ -30,5 +30,9 @@ class Person < Nameable
 
   def correct_name
     @name
+  end
+
+  def add_rental(date, book)
+    Rental.new(date, self, book)
   end
 end
